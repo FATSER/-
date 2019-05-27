@@ -85,7 +85,7 @@ public class MapActivity extends AppCompatActivity {
         public void onReceiveLocation(BDLocation location){
             if (null != location && location.getLocType() != BDLocation.TypeServerError) {
                 StringBuffer sb = new StringBuffer(256);
-                Log.i("ansen","getLongitude:"+location.getLongitude());
+                Log.i("tag","getLongitude:"+location.getLongitude());
                 sb.append("当前定位时间 : ");
                 sb.append(location.getTime());
                 sb.append("\n定位类型 : ");
